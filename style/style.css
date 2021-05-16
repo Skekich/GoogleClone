@@ -157,7 +157,7 @@ button {
     list-style: none;
 }
 
-.firstMenu {
+.firstMenuMobile {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -166,7 +166,7 @@ button {
     margin-bottom: 2rem;
 }
 
-.secondMenu {
+.secondMenuMobile {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -174,7 +174,7 @@ button {
     width: 100%;
 }
 
-.firstMenu li, .secondMenu li {
+.firstMenuMobile li, .secondMenuMobile li {
     margin-left: 1rem;
 }
 
@@ -187,13 +187,9 @@ hr {
     visibility: hidden;
 }
 
- .showOnDesktop {
-        display: none;
-    }
-
-    .showOnMobile {
-        display: flex;
-    }
+.firstMenuDesktop, .secondMenuDesktop {
+    display: none;
+}
 
 @media only screen and (min-width: 800px) {
 
@@ -228,30 +224,27 @@ hr {
         flex-flow: row nowrap;
     }
 
-    .firstMenu.secondMenu {
+    .firstMenuDesktop, .secondMenuDesktop {
+        display: flex;
         width: 50%;
         align-items: center;        
     }
 
-    .firstMenu {
+    .firstMenuDesktop {
         justify-content: flex-start;
         margin-bottom: 0rem;
     }
 
-    .secondMenu {
+    .secondMenuDesktop {
         justify-content: flex-end;
         margin-right: 3rem;
     }
 
-    .firstMenu li, .secondMenu li {
+    .firstMenuDesktop li, .secondMenuDesktop li {
         margin-left: 3rem;
     }
 
-    .showOnDesktop {
-        display: flex;
-    }
-
-    .showOnMobile {
+    .firstMenuMobile, .secondMenuMobile {
         display: none;
     }
   }
