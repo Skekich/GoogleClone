@@ -1,0 +1,241 @@
+@font-face{
+    font-family: product-sans;
+    src: url('../fonts/Product\ Sans\ Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "product-sans";
+    color: grey;
+}
+
+#wrapper {
+    font-size: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    font-size: 1.5rem;
+    min-height: 10%;
+}
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    min-height: 75%;
+    margin-top: 4rem;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    min-height: 15%;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 1rem 0rem 0rem 2rem;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+
+.userImage{
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.googleImg {
+    display: flex;
+    justify-content: center;
+}
+
+.googleImg img {
+    max-width: 60%;
+    height: auto;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    margin-top: 3.5rem;
+}
+
+.searchBar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    background-color: white;
+    border: 0.1rem solid rgb(190, 190, 190);
+    width: 100%;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+input {
+    border: none;
+    margin: 1rem 0.5rem 1rem 0rem;
+    font-size: 1.8rem;
+    outline: none;
+    color: black;
+    width: 100%;
+}
+
+i{
+    font-size: 1.5rem;
+    margin: 0rem 1rem;
+    color: grey;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.lang {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: normal;
+    margin-top: 3rem;
+}
+
+.localLang {
+    font-size: inherit;
+    color: blue;
+    font-weight: inherit;
+    margin-left: 1.5rem;
+}
+
+.country {
+    margin: 1rem 0rem 1rem 2rem;
+    width: 100%;
+}
+
+.footerMenu {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2rem 0rem 2rem 0rem;
+    width: 100%;
+}
+
+.footerMenu ul {
+    list-style: none;
+}
+
+.firstMenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.secondMenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.firstMenu li, .secondMenu li {
+    margin-left: 1rem;
+}
+
+hr {
+    width: 100%;
+    border: .1rem solid rgb(223, 221, 221);
+}
+
+.desktopSize {
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 800px) {
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    .searchBar {
+        width: 800px;
+        max-width: 800px;
+    }
+
+    .googleImg img {
+    max-width: 100%;
+    height: auto;
+    }
+
+    .desktopSize {
+        visibility: visible;
+    }
+
+    .mobileSize {
+        visibility: hidden;
+    }
+    
+    .footer{
+        min-height: 8%;
+    }
+
+    .footerMenu {
+        width: 100%;
+        flex-flow: row nowrap;
+    }
+
+    .firstMenu.secondMenu {
+        width: 50%;
+        align-items: center;        
+    }
+
+    .firstMenu {
+        justify-content: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .secondMenu {
+        justify-content: flex-end;
+        margin-right: 3rem;
+    }
+
+    .firstMenu li, .secondMenu li {
+        margin-left: 3rem;
+    }
+  }
