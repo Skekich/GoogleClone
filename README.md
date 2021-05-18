@@ -1,3 +1,1 @@
-GoogleCopy
-
-Google search page layout clone
+Google search page clone just the basic stuff 
